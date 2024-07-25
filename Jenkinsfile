@@ -8,8 +8,8 @@ pipeline {
       steps {
         sh 'docker compose up -d'
         sh '''
-        python3 -m venv .venv
-        . .venv/bin/activate
+        python3 -m venv venv
+        . venv/bin/activate
         pip install pytest selenium
         docker compose up -d
         sleep 20
