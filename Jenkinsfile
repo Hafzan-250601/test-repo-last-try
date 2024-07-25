@@ -8,6 +8,7 @@ pipeline {
       steps {
         sh 'docker compose up -d'
         sh '''
+        pip install virtualenv
         python3 -m venv venv
         . venv/bin/activate
         pip install pytest selenium
