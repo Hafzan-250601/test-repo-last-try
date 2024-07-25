@@ -7,6 +7,10 @@ pipeline {
     stage('Build') {
       steps {
         sh 'docker build -t devopsapps .'
+        sh '''
+        cd DevopsClass
+        docker build -t backend .
+        '''
       }
     }
   }
