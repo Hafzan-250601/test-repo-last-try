@@ -8,8 +8,7 @@ pipeline {
       steps {
         sh 'docker compose up -d'
         sh '''
-        
-        apt update && apt upgrade -y
+        apt-get update && apt-get upgrade -y
         apt-get install python3 python3-pip python3-venv -y
         python3 -m venv .venv
         . .venv/bin/activate
