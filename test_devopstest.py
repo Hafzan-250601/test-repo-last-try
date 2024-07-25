@@ -19,7 +19,7 @@ class TestDevopstest():
     self.driver.quit()
   
   def test_devopstest(self):
-    self.driver.get("http://localhost/")
+    self.driver.get("http://localhost:81/")
     self.driver.find_element(By.CSS_SELECTOR, "input").click()
     self.driver.find_element(By.CSS_SELECTOR, "button").click()
     self.driver.find_element(By.CSS_SELECTOR, "tr:nth-child(1) > td:nth-child(1)").click()

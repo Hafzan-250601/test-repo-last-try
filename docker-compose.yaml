@@ -34,7 +34,7 @@ services:
     build: ./DevopsClassFront
     restart: always
     ports:
-      - "80:80"
+      - "81:81"
     networks:
       - my-network
     volumes:
