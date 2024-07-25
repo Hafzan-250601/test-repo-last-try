@@ -6,6 +6,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
+        sh 'docker compose up -d'
         sh 'docker build -t devopsapps .'
         sh '''
         cd DevopsClass
